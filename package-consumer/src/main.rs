@@ -13,7 +13,7 @@ fn main() {
     let mut package_loader = PackageLoader::new();
     match package_loader.load_package(
         String::from("libcore_package"),
-        String::from("./core-package/target/debug/libcore_package.dylib"),
+        String::from("../core-package/target/debug/libcore_package.dylib"),
     ) {
         Ok(_) => {}
         Err(error) => {
@@ -47,7 +47,7 @@ mod tests {
                 let mut package_loader = PackageLoader::new();
                 match package_loader.load_package(
                     String::from("libcore_package"),
-                    String::from("./core-package/target/debug/libcore_package.dylib"),
+                    String::from("../core-package/target/debug/libcore_package.dylib"),
                 ) {
                     Ok(_) => {}
                     Err(error) => {
