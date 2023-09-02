@@ -38,6 +38,7 @@ This output indicates that the `print` function is accessible at runtime.
 Once we have built the example package, we can run the consumer as follows:
 
 ```bash
+cd package-consumer
 cargo run
 # hey
 ```
@@ -52,5 +53,7 @@ The `FFIValue` enum contains basic data types like `f64`, `bool`, and `char`.
 The library implementer can consume the array of values to obtain arguments.
 
 > Note: The `FFIValue` enum must be consistent in both the library and the consumer. Optionally, these two crates can obtain `FFIValue` from a separate crate.
+
+--
 
 > Author: Yunus Emre Dilber ([@yunusemredilber](https://github.com/yunusemredilber))
